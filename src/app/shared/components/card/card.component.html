@@ -6,7 +6,7 @@
     <img mat-card-image [src]="car?.img" [alt]="car?.model">
     <mat-card-actions>
         <button mat-raised-button color="primary">READ MORE</button>
-        <button mat-raised-button color="accent">EDIT</button>
+        <button mat-raised-button color="accent" (click)="editCar(car)">EDIT</button>
         <button mat-raised-button color="warn">DELETE</button>
     </mat-card-actions>
 </mat-card>

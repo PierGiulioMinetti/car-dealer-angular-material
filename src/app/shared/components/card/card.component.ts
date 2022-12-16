@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
+import { EventEmitter } from '@angular/core';
 import { Car } from '../../../core/models/car.models'
 
 @Component({
@@ -8,10 +9,17 @@ import { Car } from '../../../core/models/car.models'
 })
 export class CardComponent implements OnInit {
   @Input() car: Car | undefined;
+  @Output() carToEdit = new EventEmitter<Car | undefined>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  editCar(car: Car | undefined) {
+    console.log(this.car);
+    this.carToEdit.emit(car);
+  }
+
 
 }

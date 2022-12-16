@@ -34,13 +34,24 @@ export class AppComponent {
     const dialogRef = this.dialog.open(ModalCarComponent,
       {
         width: '50%',
-        data: {
-          brand: 'Bugatti',
-          model: 'Veyron',
-          price: 20000000,
-          img: 'no',
-          description: 'Bugatti Veyron V16'
-        }
+      }
+    );
+
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.table('result TABLE', result);
+    });
+  }
+
+
+  //fetch as @Output() the car to send to the dialog to be edited
+  getCarToEdit(carToEdit: Car | undefined) {
+    console.log('CAR TO EDIT METHOD', carToEdit);
+
+    const dialogRef = this.dialog.open(ModalCarComponent,
+      {
+        width: '50%',
+        data: carToEdit
       }
     );
 

@@ -1,12 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 import { Car } from '../models/car.models';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CarService {
-  private URL = 'http://localhost:3000/cars'
+  private URL = 'http://localhost:3000/cars';
+
+  actualCar$ = new Subject();
 
   constructor(private http: HttpClient) { }
 
