@@ -1,8 +1,21 @@
 :host {
     padding: 1rem;
 
-    .title {
+    .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
+
+        button {
+            position: relative;
+            bottom: 3px;
+        }
+    }
+
+    .new-car-btn-container {
+        width: 100px;
+        margin: 0 auto;
     }
 
     .card-container {
