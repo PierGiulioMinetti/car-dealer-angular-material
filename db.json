@@ -1,0 +1,28 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "brand": "Lamborghini",
+      "model": "Huracan",
+      "price": 200000,
+      "img": "https://thedriver.it/listini/foto/lamborghini-huracan-40497_cabriolet-2-porte-huracan-evo-spyder-front-view.jpg",
+      "description": "Sculptured and sensual, the Huracán’s design is based on the spiky hexagonal forms of the carbon atom, while the seamless roof profile is an unmistakable mark of the Lamborghini DNA. The Huracán is unique even in the dark, thanks to the alluringly “technological” light of its full-LED lighting system. Choose your favourite Lamborghini Huracán and discover its technical specifications."
+    },
+    {
+      "id": 2,
+      "brand": "Ferrari",
+      "model": "La Ferrari",
+      "price": 1420000,
+      "img": "https://img.gta5-mods.com/q95/images/ferrari-laferrari-aperta-2017-china_dazu/4ef7b7-1.jpg",
+      "description": "It boasts the most extreme performance ever achieved by a Ferrari production car and features the most advanced and innovative technical solutions which will, in the future, filter down to the rest of the Ferrari range. The LaFerrari is Ferrari’s first ever production car to be equipped with the F1-derived hybrid solution – the HY-KERS system – which combines an electric motor producing over 150 CV with the most powerful incarnation yet of Ferrari’s classic V12, with 800 CV at 9000 rpm."
+    },
+    {
+      "id": 3,
+      "brand": "McLaren",
+      "model": "720S",
+      "price": 271000,
+      "img": "https://imgd.aeplcdn.com/0x0/n/cw/ec/95143/720s-coupe-exterior-right-front-three-quarter.jpeg",
+      "description": "The McLaren 720S coupe is purposeful and radical. With apex predator responses. This light and strong supercar accelerates from 0-60mph in an incredible 2.8 seconds when provoked. And can cover a quarter of a mile in 10.4 seconds. From a standing start."
+    }
+  ]
+}

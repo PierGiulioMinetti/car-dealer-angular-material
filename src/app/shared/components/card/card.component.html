@@ -1,0 +1,16 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <mat-card-title>{{car?.brand}}</mat-card-title>
+        <mat-card-subtitle>{{car?.model}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="car?.img" [alt]="car?.model">
+    <!-- <mat-card-content>
+        <p>
+            {{car?.description}}
+        </p>
+    </mat-card-content> -->
+    <mat-card-actions>
+        <button mat-button>READ MORE</button>
+        <button mat-button>SHARE</button>
+    </mat-card-actions>
+</mat-card>
