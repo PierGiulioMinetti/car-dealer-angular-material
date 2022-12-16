@@ -29,14 +29,16 @@ export class AppComponent {
     })
   }
 
+  // with this method we open the dialog and when it close we subscribe to it and read the values
   openDialog() {
     const dialogRef = this.dialog.open(ModalCarComponent,
       {
         width: '50%'
       });
 
-    // dialogRef.afterClosed().subscribe(result => {
-    //   console.log(`Dialog result: ${result}`);
-    // });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.table('result TABLE', result);
+    });
   }
 }

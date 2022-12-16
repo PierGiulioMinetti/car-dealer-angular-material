@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-modal-car',
@@ -9,13 +10,17 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ModalCarComponent implements OnInit {
 
   carForm!: FormGroup;
-  constructor(private fb: FormBuilder) {
+
+  constructor(
+    private fb: FormBuilder,
+    public dialogRef: MatDialogRef<ModalCarComponent>
+  ) {
     this.carForm = fb.group({
-      brand: [null, Validators.required],
-      model: [null, Validators.required],
-      price: [null, Validators.required],
-      img: [null, Validators.required],
-      description: [null, Validators.required]
+      brand: [null],
+      model: [null],
+      price: [null],
+      img: [null],
+      description: [null]
     })
   }
 
@@ -23,8 +28,14 @@ export class ModalCarComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.carForm.getRawValue());
+    let formsValue = this.carForm.getRawValue()
 
+    //to pass to the dialog the values of the form
+    this.closeDialog(formsValue)
+  }
 
+  //method to close the dialog (we pass a parameter that will be the forms value)
+  closeDialog(formsValue: {}) {
+    this.dialogRef.close(formsValue);
   }
 }
