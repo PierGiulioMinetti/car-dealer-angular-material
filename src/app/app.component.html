@@ -1,16 +1,12 @@
-<h1>
+<h1 class="title">
   Car Catalogue
 </h1>
 
 <ng-container *ngIf="cars">
-  <app-card *ngFor="let car of cars" [car]="car">
-  </app-card>
-
+  <div class="card-container">
+    <app-card *ngFor="let car of cars" [car]="car">
+    </app-card>
+  </div>
 </ng-container>
-
-
-
-
-
 
 <!-- <router-outlet></router-outlet> -->
