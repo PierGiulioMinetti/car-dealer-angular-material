@@ -38,15 +38,17 @@ export class AppComponent {
     );
 
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.table('result TABLE', result);
+    dialogRef.afterClosed().subscribe(carFromForm => {
+      console.table('result TABLE', carFromForm);
+
+
     });
   }
 
 
   //fetch as @Output() the car to send to the dialog to be edited
   getCarToEdit(carToEdit: Car | undefined) {
-    console.log('CAR TO EDIT METHOD', carToEdit);
+    console.log('edit car method (parent)', carToEdit);
 
     const dialogRef = this.dialog.open(ModalCarComponent,
       {
@@ -56,8 +58,11 @@ export class AppComponent {
     );
 
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.table('result TABLE', result);
+    dialogRef.afterClosed().subscribe(carFromForm => {
+      this.carService.editCar(carFromForm.id, carFromForm).subscribe((res) => {
+        console.log('edited CORRECTLY!!!');
+
+      })
     });
   }
 }

@@ -42,7 +42,7 @@
                 formControlName="description">
         </mat-form-field>
     </div>
-    <button type="submit" mat-raised-button color="primary">
-        CREATE
+    <button type="submit" mat-raised-button [color]="data ? 'accent' : 'primary'">
+        {{data ? 'EDIT' : 'CREATE'}}
     </button>
 </form>
