@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Car } from './core/models/car.models';
 import { CarService } from './core/services/car.service';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalCarComponent } from './shared/components/modal-car/modal-car.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +13,8 @@ export class AppComponent {
   cars!: Car[];
 
   constructor(
-    private carService: CarService
+    private carService: CarService,
+    public dialog: MatDialog
   ) { }
 
   ngOnInit() {
@@ -24,5 +27,16 @@ export class AppComponent {
       console.log(cars);
       this.cars = cars;
     })
+  }
+
+  openDialog() {
+    const dialogRef = this.dialog.open(ModalCarComponent,
+      {
+        width: '50%'
+      });
+
+    // dialogRef.afterClosed().subscribe(result => {
+    //   console.log(`Dialog result: ${result}`);
+    // });
   }
 }

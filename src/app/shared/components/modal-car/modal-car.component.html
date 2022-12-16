@@ -1,8 +1,48 @@
-<form (ngSubmit)="onSubmit()" [formGroup]="carForm">
-    <input type="text" placeholder="Brand" formControlName="brand">
-    <input type="text" placeholder="Model" formControlName="model">
-    <input type="number" placeholder="Price" formControlName="price">
-    <input type="text" placeholder="Image Link" formControlName="img">
-    <input type="text" placeholder="Description" formControlName="description">
-    <button type="submit">submit</button>
+<!-- s -->
+
+<!-- DIALOG MATERIAL -->
+<h2 mat-dialog-title>Install Angular</h2>
+
+<!-- FORM  -->
+<form class="example-form" (ngSubmit)="onSubmit()" [formGroup]="carForm">
+    <!-- brand  -->
+    <div>
+        <mat-form-field class="example-full-width">
+            <mat-label>Brand</mat-label>
+            <input matInput #message maxlength="256" placeholder="Brand of the new car" formControlName="brand">
+        </mat-form-field>
+        <!-- model  -->
+    </div>
+    <div>
+        <mat-form-field class="example-full-width">
+            <mat-label>Model</mat-label>
+            <input matInput #message maxlength="256" placeholder="Model of the new car" formControlName="model">
+        </mat-form-field>
+        <!-- price  -->
+    </div>
+    <div>
+        <mat-form-field class="example-full-width">
+            <mat-label>Price</mat-label>
+            <input matInput #message maxlength="256" type="number" placeholder="Price of the new car"
+                formControlName="price">
+        </mat-form-field>
+    </div>
+    <!-- image  -->
+    <div>
+        <mat-form-field class="example-full-width">
+            <mat-label>Image</mat-label>
+            <input matInput #message maxlength="256" placeholder="Image of the new car" formControlName="img">
+        </mat-form-field>
+        <!-- description  -->
+    </div>
+    <div>
+        <mat-form-field class="example-full-width">
+            <mat-label>Description</mat-label>
+            <input matInput #message maxlength="256" placeholder="Description of the new car"
+                formControlName="description">
+        </mat-form-field>
+    </div>
+    <button type="submit" mat-raised-button color="primary">
+        CREATE
+    </button>
 </form>

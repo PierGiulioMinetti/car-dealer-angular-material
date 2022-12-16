@@ -8,6 +8,8 @@ import { CardComponent } from './components/card/card.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { ModalCarComponent } from './components/modal-car/modal-car.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
 
 const COMPONENTS = [
   CardComponent
@@ -16,7 +18,10 @@ const COMPONENTS = [
 const MODULES = [
   ReactiveFormsModule,
   MatCardModule,
-  MatButtonModule
+  MatButtonModule,
+  MatDialogModule,
+  MatInputModule
+
 ]
 
 @NgModule({
