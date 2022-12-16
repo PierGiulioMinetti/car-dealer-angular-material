@@ -25,7 +25,7 @@ export class CarService {
     return this.http.post<Car>(this.URL, car)
   }
   //PUT
-  editCar(id: number, car: Car) {
+  editCar(id: number | undefined, car: Car | undefined) {
     return this.http.patch<Car>(`${this.URL}/${id}`, car)
 
   }

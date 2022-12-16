@@ -11,6 +11,7 @@ import { ModalCarComponent } from './shared/components/modal-car/modal-car.compo
 })
 export class AppComponent {
   cars!: Car[];
+  car$!: Car;
 
   constructor(
     private carService: CarService,
@@ -39,12 +40,25 @@ export class AppComponent {
 
 
     dialogRef.afterClosed().subscribe(carFromForm => {
-      console.table('result TABLE', carFromForm);
 
-
+      this.car$ = carFromForm;
+      if (this.car$) {
+        this.postNewCar();
+      }
+      console.log('THIS CAR$', this.car$);
     });
   }
 
+  //post new Car
+  postNewCar() {
+    this.carService.createCar(this.car$).subscribe((res) => {
+      console.log(res);
+
+      console.log('CAR CREATED? MAYBE');
+      this.getCars();
+
+    })
+  }
 
   //fetch as @Output() the car to send to the dialog to be edited
   getCarToEdit(carToEdit: Car | undefined) {
@@ -59,10 +73,10 @@ export class AppComponent {
 
 
     dialogRef.afterClosed().subscribe(carFromForm => {
-      this.carService.editCar(carFromForm.id, carFromForm).subscribe((res) => {
-        console.log('edited CORRECTLY!!!');
-
-      })
+      this.carService.editCar(carToEdit?.id, carFromForm).subscribe((res) => {
+        console.log('edited MAYBE?');
+        this.getCars();
+      });
     });
   }
 }

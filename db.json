@@ -3,17 +3,17 @@
     {
       "id": 1,
       "brand": "Lamborghini",
-      "model": "Huracan",
+      "model": "Aventador",
       "price": 200000,
-      "img": "https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/huracan/model_chooser/gw_hura_model_chooser_hura_tecnica_m.png",
+      "img": "https://purepng.com/public/uploads/large/purepng.com-lamborghini-aventador-lp-white-carcarvehicletransportlamborghini-961524646312vzb4b.png",
       "description": "Sculptured and sensual, the Huracán’s design is based on the spiky hexagonal forms of the carbon atom, while the seamless roof profile is an unmistakable mark of the Lamborghini DNA. The Huracán is unique even in the dark, thanks to the alluringly “technological” light of its full-LED lighting system. Choose your favourite Lamborghini Huracán and discover its technical specifications."
     },
     {
       "id": 2,
       "brand": "Ferrari",
       "model": "La Ferrari",
-      "price": 1420000,
-      "img": "https://www.freepnglogos.com/uploads/ferrari-png/ferrari-south-bay-5.png",
+      "price": 3,
+      "img": "https://static.wikia.nocookie.net/forzamotorsport/images/5/5a/HOR_XB1_Ferrari_LaFerrari.png/revision/latest?cb=20191021122528",
       "description": "It boasts the most extreme performance ever achieved by a Ferrari production car and features the most advanced and innovative technical solutions which will, in the future, filter down to the rest of the Ferrari range. The LaFerrari is Ferrari’s first ever production car to be equipped with the F1-derived hybrid solution – the HY-KERS system – which combines an electric motor producing over 150 CV with the most powerful incarnation yet of Ferrari’s classic V12, with 800 CV at 9000 rpm."
     },
     {
@@ -23,6 +23,14 @@
       "price": 271000,
       "img": "https://imgd.aeplcdn.com/0x0/n/cw/ec/95143/720s-coupe-exterior-right-front-three-quarter.jpeg",
       "description": "The McLaren 720S coupe is purposeful and radical. With apex predator responses. This light and strong supercar accelerates from 0-60mph in an incredible 2.8 seconds when provoked. And can cover a quarter of a mile in 10.4 seconds. From a standing start."
+    },
+    {
+      "brand": "sdfdsf",
+      "model": null,
+      "price": null,
+      "img": null,
+      "description": null,
+      "id": 4
     }
   ]
 }
