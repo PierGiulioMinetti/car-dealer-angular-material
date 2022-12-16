@@ -33,8 +33,16 @@ export class AppComponent {
   openDialog() {
     const dialogRef = this.dialog.open(ModalCarComponent,
       {
-        width: '50%'
-      });
+        width: '50%',
+        data: {
+          brand: 'Bugatti',
+          model: 'Veyron',
+          price: 20000000,
+          img: 'no',
+          description: 'Bugatti Veyron V16'
+        }
+      }
+    );
 
 
     dialogRef.afterClosed().subscribe(result => {
