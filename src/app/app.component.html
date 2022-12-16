@@ -11,7 +11,8 @@
 
 <ng-container *ngIf="cars">
   <div class="card-container">
-    <app-card *ngFor="let car of cars" [car]="car" (carToEdit)="getCarToEdit($event)">
+    <app-card *ngFor="let car of cars" [car]="car" (carToEdit)="getCarToEdit($event)"
+      (isPageToRefresh)="pageToRefresh($event)">
     </app-card>
   </div>
 </ng-container>

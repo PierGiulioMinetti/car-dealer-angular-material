@@ -79,4 +79,14 @@ export class AppComponent {
       });
     });
   }
+
+
+  pageToRefresh(event: boolean) {
+    console.log('IS PAGE TO REFRESH?: ', event);
+    const ISPAGETOREFRESH = event;
+    if (ISPAGETOREFRESH) {
+      this.getCars();
+    }
+
+  }
 }

@@ -30,7 +30,7 @@ export class CarService {
 
   }
   //DELETE
-  deleteCar(id: number) {
+  deleteCar(id: number | undefined) {
     return this.http.delete<Car>(`${this.URL}/${id}`)
   }
 

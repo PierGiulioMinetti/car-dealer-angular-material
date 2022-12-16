@@ -7,6 +7,6 @@
     <mat-card-actions>
         <button mat-raised-button color="primary">READ MORE</button>
         <button mat-raised-button color="accent" (click)="editCar(car)">EDIT</button>
-        <button mat-raised-button color="warn">DELETE</button>
+        <button mat-raised-button color="warn" (click)="deleteCar(car?.id)">DELETE</button>
     </mat-card-actions>
 </mat-card>
