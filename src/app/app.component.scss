@@ -10,13 +10,14 @@
         button {
             position: relative;
             bottom: 3px;
+
+            &:hover {
+                background-color: rgb(68, 185, 68);
+            }
         }
     }
 
-    .new-car-btn-container {
-        width: 100px;
-        margin: 0 auto;
-    }
+
 
     .card-container {
         width: 90%;

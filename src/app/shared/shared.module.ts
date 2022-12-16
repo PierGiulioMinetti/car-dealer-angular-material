@@ -1,24 +1,28 @@
 // MODULES
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 // COMPONENTS
 import { CardComponent } from './components/card/card.component';
 // MATERIAL
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { ModalCarComponent } from './components/modal-car/modal-car.component';
 
 const COMPONENTS = [
   CardComponent
 ];
 
 const MODULES = [
+  ReactiveFormsModule,
   MatCardModule,
   MatButtonModule
 ]
 
 @NgModule({
   declarations: [
-    CardComponent
+    CardComponent,
+    ModalCarComponent
   ],
   imports: [
     CommonModule,
