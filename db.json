@@ -21,8 +21,16 @@
       "model": "P90",
       "price": 1250000,
       "img": "https://immagini.alvolante.it/sites/default/files/styles/image_gallery_big/public/serie_auto_galleria/2021/11/ferrari_sf90_spider_top_ant.png?itok=s365EZ9g",
-      "description": "The Best Ferrari ever",
+      "description": "The SF90 Stradale is the first ever Ferrari to feature PHEV (Plug-in Hybrid Electric Vehicle) architecture which sees the internal combustion engine integrated with three electric motors, two of which are independent and located on the front axle, with the third at the rear between the engine and the gearbox.  ",
       "id": 4
+    },
+    {
+      "brand": "Koenigsegg ",
+      "model": "Regera ",
+      "price": 2000000,
+      "img": "https://www.pngmart.com/files/22/Koenigsegg-Regera-PNG-Clipart.png",
+      "description": "Traditionally, Koenigsegg models offer a level of unexpected functionality. The goal of Koenigsegg is to create the fastest, most high-performing vehicles in the world, but that doesn’t mean comfort, luxury, and practicality don’t play their parts. The Regera embodies this philosophy with incredible speed and handling, as well as a cabin that delivers superb comfort in any driving situation.l",
+      "id": 5
     }
   ]
 }

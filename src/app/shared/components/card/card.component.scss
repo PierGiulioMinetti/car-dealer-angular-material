@@ -1,14 +1,31 @@
 .example-card {
-    max-width: 400px;
+    max-width: 250px;
+
+    .car-text {
+        // background-color: green;
+        height: 20%;
+    }
+
+    .car-img {
+        // background-color: red;
+        padding-top: 2rem;
+        height: 60%;
+    }
+
+    .car-buttons {
+        height: 20%;
+        // background-color: blue;
+
+        .mat-card-actions {
+            display: flex;
+            justify-content: center;
+        }
+    }
 
     button:hover {
         background-color: rgba(241, 241, 238, 0.808);
         color: black;
     }
 
-    .mat-card-actions {
-        display: flex;
-        justify-content: center;
-    }
 
 }
