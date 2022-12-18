@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CarService } from 'src/app/core/services/car.service';
 import { Car } from '../../../core/models/car.models'
 
@@ -15,7 +17,9 @@ export class CardComponent implements OnInit {
 
 
   constructor(
-    private carService: CarService
+    private carService: CarService,
+    private route: ActivatedRoute,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -34,5 +38,9 @@ export class CardComponent implements OnInit {
     })
   }
 
+  goToDetailPage(id: number | undefined) {
+    alert(id);
+    this.router.navigate(['./detail-page'], { relativeTo: this.route });
+  }
 
 }

@@ -5,7 +5,7 @@
     </mat-card-header>
     <img mat-card-image [src]="car?.img" [alt]="car?.model">
     <mat-card-actions>
-        <button mat-raised-button color="primary">READ MORE</button>
+        <button mat-raised-button color="primary" (click)="goToDetailPage(car?.id)">READ MORE</button>
         <button mat-raised-button color="accent" (click)="editCar(car)">EDIT</button>
         <button mat-raised-button color="warn" (click)="deleteCar(car?.id)">DELETE</button>
     </mat-card-actions>

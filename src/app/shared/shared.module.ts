@@ -20,7 +20,7 @@ const MODULES = [
   MatCardModule,
   MatButtonModule,
   MatDialogModule,
-  MatInputModule
+  MatInputModule,
 
 ]
 
