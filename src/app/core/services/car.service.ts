@@ -19,6 +19,10 @@ export class CarService {
   }
 
   //GET - single car
+  fetchCar(id: number | undefined) {
+    return this.http.get<Car>(`${this.URL}/${id}`);
+  }
+
 
   //POST
   createCar(car: Car) {

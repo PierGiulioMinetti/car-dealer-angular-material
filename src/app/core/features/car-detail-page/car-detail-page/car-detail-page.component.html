@@ -1,1 +1,18 @@
-<p>car-detail-page works!</p>
+<mat-card class="example-card">
+    <mat-card-header>
+        <mat-card-title>{{car?.brand}}</mat-card-title>
+        <mat-card-subtitle>{{car?.model}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="car?.img" [alt]="car?.model">
+    <p>
+        {{car?.price | currency:'EUR':true }}
+    </p>
+    <p>
+        {{car?.description}}
+    </p>
+    <!-- <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="goToDetailPage(car?.id)">READ MORE</button>
+        <button mat-raised-button color="accent" (click)="editCar(car)">EDIT</button>
+        <button mat-raised-button color="warn" (click)="deleteCar(car?.id)">DELETE</button>
+    </mat-card-actions> -->
+</mat-card>

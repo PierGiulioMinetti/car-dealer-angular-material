@@ -39,8 +39,8 @@ export class CardComponent implements OnInit {
   }
 
   goToDetailPage(id: number | undefined) {
-    alert(id);
-    this.router.navigate(['./detail-page'], { relativeTo: this.route });
+    // alert(id);
+    this.router.navigate(['./detail-page/' + id], { relativeTo: this.route });
   }
 
 }
